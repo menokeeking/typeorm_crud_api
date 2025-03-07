@@ -32,7 +32,7 @@ const swaggerSpec = {
         },
         servers: [
             {
-                url: "http://172.31.74.11:5151"
+                url: "http://172.31.74.13:5151"
             }
         ]
     },
