@@ -73,7 +73,7 @@ const router = Router ()
 *               fechaRegreso: "2024-04-26T16:03:23.609Z"
 *               dias: 0
 *               estatus: 0
-*               importe": 0
+*               importe: 0
 * 
 * */
 
