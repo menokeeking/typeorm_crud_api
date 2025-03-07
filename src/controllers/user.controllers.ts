@@ -5,7 +5,7 @@ export const createUser = async (req: Request, res: Response) => {
     try {
         const { ID, FIRSTNAME, LASTNAME} = req.body;
         
-        const usercea = new USERCEA()
+        /* const usercea = new USERCEA()
         usercea.ID = ID;
         usercea.FIRSTNAME = FIRSTNAME;
         usercea.LASTNAME = LASTNAME;
@@ -13,7 +13,9 @@ export const createUser = async (req: Request, res: Response) => {
 
         await usercea.save();
 
-        return res.json(usercea);
+        return res.json(usercea); */
+        console.log(req.body);
+        return res.json("Hola users");
         
         //res.send('hello world')
     } catch (error) {

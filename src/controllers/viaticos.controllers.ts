@@ -1,7 +1,7 @@
 import { AppDataSource } from "../db"
 import { Request, Response } from 'express'
 import apitointerface from "../functions/viaticos_apitointerface";
-import { DetalleViatico } from "../interfaces/DetalleViatico";
+//import { DetalleViatico } from "../interfaces/DetalleViatico";
 
 export const getViaticosdet = async (req: Request, res: Response) => {
   try {

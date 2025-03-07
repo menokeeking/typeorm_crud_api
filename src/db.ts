@@ -18,5 +18,5 @@ export const AppDataSource = new DataSource({
     connectString: "sistem",
     synchronize: false,
     logging: true,
-    entities: [USERCEA,EMPLEADOS,VIATICOSDET, VEH_IND1, EMP_IND1]
+    entities: [USERCEA,EMPLEADOS, VEH_IND1, EMP_IND1]
 })
