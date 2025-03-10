@@ -14,11 +14,11 @@ import foliarRoutes from './routes/foliar.routes'
 
 const app = express()
 
-const corsOptions = {
-    origin: '*', // Permite todos los orígenes
-  };
-  
-  app.use(cors(corsOptions));
+app.use(cors({
+    origin: '*', // Permite todas las IPs (no recomendado para producción)
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+  }));
 
 
 
@@ -32,7 +32,7 @@ const swaggerSpec = {
         },
         servers: [
             {
-                url: "http://172.31.74.13:5151"
+                url: "http://172.31.74.11:5151"
             }
         ]
     },

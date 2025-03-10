@@ -8,7 +8,7 @@ async function main(){
         
         console.log("OracleDB Conectada a la BD : SISTEM");
         
-        app.listen(5151);
+        app.listen(5151, '0.0.0.0',);
         console.log('El servidor esta escuchando en el puerto', 5151);
 
     } catch(error){
