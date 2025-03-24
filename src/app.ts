@@ -12,6 +12,7 @@ import { getVeh_ind1 } from './controllers/veh_g2.controllers'
 import veh_g2Routes from './routes/veh_g2.routes'
 import foliarRoutes from './routes/foliar.routes'
 import docxRoutes from './routes/docx.route'
+import pdfRoutes from "./routes/pdf.routes";
 
 const app = express()
 
@@ -44,7 +45,7 @@ const swaggerSpec = {
 
 app.use(express.json())
 
-app.use(userRoutes, empRoutes,viaticosRoutes,emp_g1Routes, veh_g2Routes, foliarRoutes, docxRoutes)
+app.use(userRoutes, empRoutes,viaticosRoutes,emp_g1Routes, veh_g2Routes, foliarRoutes, docxRoutes, pdfRoutes)
 
 app.use("/swagger", swaggerUI.serve, swaggerUI.setup(swaggerJSDoc(swaggerSpec)))
 

@@ -26,9 +26,7 @@ export const generateDocx = async (data: Record<string, any>): Promise<Buffer> =
     /* const buffer = doc.getZip().generate({ type: "nodebuffer" });
     fs.writeFileSync(outputPath, buffer); */
 
-    const buffer = doc.getZip().generate({ type: "nodebuffer" });
+    //const buffer = doc.getZip().generate({ type: "nodebuffer" });
     return doc.getZip().generate({ type: "nodebuffer" });
-
-
     
 };
